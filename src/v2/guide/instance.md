@@ -116,7 +116,7 @@ var vm = new Vue({
 vm.$data === data // => true
 vm.$el === document.getElementById('example') // => true
 
-// $watch 是一个实例方法
+// $watch 是一个实例方法(如果wathc的是一个对象，回调的oldValue有问题，oldValu返回的其实是newValue)
 vm.$watch('a', function (newValue, oldValue) {
   // 这个回调将在 `vm.a` 改变后调用
 })
